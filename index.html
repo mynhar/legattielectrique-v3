@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legatti Entreprise Électrique - Soluciones Eléctricas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-bg {
+            background-image: url('./img/legatti-01-v2.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilo para el menú móvil */
+        .mobile-menu {
+            display: none;
+        }
+
+        /* Clases para mostrar/ocultar menú móvil */
+        .menu-open .mobile-menu {
+            display: block;
+        }
+
+        .menu-open .icon-open {
+            display: none;
+        }
+
+        .menu-open .icon-close {
+            display: block;
+        }
+
+        .icon-close {
+            display: none;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #navbar {
+            background-color: #e63946;
+
+        }
+
+        #navbar a[href] {
+            color: #f1faee;
+        }
+
+        .textsky300 {
+            color: #e63946;
+            ;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <nav id="navbar" class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
+            <div class="flex justify-between items-center">
+                <div class="md:transform md:-translate-x-1/2">
+                    <img src="./img/legatti-logo-final.png" alt="Logo Corporation des maîtres électriciens du Québec"
+                        class="h-8 rounded">
+                </div>
+                <div class="md:transform md:-translate-x-1">
+                    <img src="./img/CMEQ_LOGO_signature_Hori_couleur_rgb.png"
+                        alt="Logo Corporation des maîtres électriciens du Québec" class="h-8 rounded">
+                </div>
+                <div class="flex md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                        class="text-slate-500 hover:text-slate-600 focus:outline-none focus:text-slate-600"
+                        aria-label="toggle menu">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current icon-open">
+                            <path fill-rule="evenodd"
+                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                            </path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current icon-close">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hidden md:flex md:items-center md:justify-end w-full">
+                <div class="flex flex-col md:flex-row md:items-center mt-3 md:mt-0">
+                    <a href="#inicio"
+                        class="my-1 text-sm font-medium text-slate-700 hover:text-sky-600 md:mx-4 md:my-0 rounded px-2 py-1">Inicio</a>
+                    <a href="#servicios"
+                        class="my-1 text-sm font-medium text-slate-700 hover:text-sky-600 md:mx-4 md:my-0 rounded px-2 py-1">Nuestros
+                        Servicios</a>
+                    <a href="#nosotros"
+                        class="my-1 text-sm font-medium text-slate-700 hover:text-sky-600 md:mx-4 md:my-0 rounded px-2 py-1">Sobre
+                        Nosotros</a>
+                    <a href="#area"
+                        class="my-1 text-sm font-medium text-slate-700 hover:text-sky-600 md:mx-4 md:my-0 rounded px-2 py-1">Área
+                        de Servicio</a>
+                    <a href="#contacto"
+                        class="my-1 text-sm font-medium text-slate-700 hover:text-sky-600 md:mx-4 md:my-0 rounded px-2 py-1">Contacto</a>
+                    <a href="tel:5147127930"
+                        class="my-1 text-sm font-medium text-sky-600 hover:bg-sky-600 hover:text-white border border-sky-600 rounded-lg px-3 py-2 md:mx-4 md:my-0 transition-colors duration-300">Llamar:
+                        514-712-7930</a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-items" class="mobile-menu md:hidden bg-white shadow-lg py-2">
+            <a href="#inicio" class="block px-6 py-2 text-sm text-slate-700 hover:bg-sky-100">Inicio</a>
+            <a href="#servicios" class="block px-6 py-2 text-sm text-slate-700 hover:bg-sky-100">Nuestros Servicios</a>
+            <a href="#nosotros" class="block px-6 py-2 text-sm text-slate-700 hover:bg-sky-100">Sobre Nosotros</a>
+            <a href="#area" class="block px-6 py-2 text-sm text-slate-700 hover:bg-sky-100">Área de Servicio</a>
+            <a href="#contacto" class="block px-6 py-2 text-sm text-slate-700 hover:bg-sky-100">Contacto</a>
+            <a href="tel:5147127930" class="block px-6 py-2 text-sm text-sky-600 hover:bg-sky-100">Llamar:
+                514-712-7930</a>
+        </div>
+    </nav>
+
+    <section id="inicio" class="hero-bg min-h-screen flex items-center pt-20 md:pt-16">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto px-6 py-12 relative z-10">
+            <div class="md:flex md:items-center">
+                <div class="md:w-3/5 text-white">
+                    <h1 class="text-4xl font-bold md:text-6xl leading-tight mb-6">Legatti Entreprise Électrique: <span
+                            class="text-sky-400">Soluciones Eléctricas</span> Confiables y Eficientes</h1>
+                    <h2 class="text-xl md:text-2xl font-medium mb-8">Servicio rápido, eficiente e impecable para todas
+                        sus necesidades eléctricas.</h2>
+
+                    <div class="mb-8 space-y-2">
+                        <p class="text-lg"><strong class="textsky300">Residencial:</strong> Instalaciones seguras y
+                            personalizadas para su hogar.</p>
+                        <p class="text-lg"><strong class="textsky300">Comercial:</strong> Soluciones eléctricas
+                            robustas para su negocio.</p>
+                        <p class="text-lg"><strong class="textsky300">Emergencia 24/7:</strong> Disponibles día y
+                            noche para situaciones críticas. <span class="font-semibold">Sí, ofrecemos servicios de
+                                emergencia 24 horas al día, 7 días a la semana.</span></p>
+                    </div>
+
+                    <p class="text-lg mb-8"><strong>Atendemos la Costa Norte de Montreal y Alrededores.</strong><br>Nos
+                        adaptamos a sus necesidades.</p>
+
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#servicios"
+                            class="bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-300 text-center">Descubra
+                            Nuestros Servicios</a>
+                        <a href="tel:5147127930"
+                            class="bg-transparent hover:bg-sky-500 text-sky-300 font-semibold hover:text-white py-3 px-8 border border-sky-300 hover:border-transparent rounded-lg text-lg transition-colors duration-300 text-center">Llámenos
+                            Ahora: 514-712-7930</a>
+                    </div>
+                </div>
+
+                <div class="md:w-2/5 mt-10 md:mt-0 md:pl-12">
+                    <div class="bg-white p-8 rounded-lg shadow-xl">
+                        <h2 class="text-2xl font-bold text-slate-800 mb-6 text-center">Solicite su Cotización Gratuita
+                        </h2>
+                        <form action="#" method="POST">
+                            <div class="mb-4">
+                                <label for="nombre" class="block text-slate-700 text-sm font-medium mb-2">Nombre
+                                    Completo</label>
+                                <input type="text" id="nombre" name="nombre"
+                                    class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-sky-500 focus:border-sky-500"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-slate-700 text-sm font-medium mb-2">Correo
+                                    Electrónico</label>
+                                <input type="email" id="email" name="email"
+                                    class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-sky-500 focus:border-sky-500"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="telefono"
+                                    class="block text-slate-700 text-sm font-medium mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono"
+                                    class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-sky-500 focus:border-sky-500"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="tipo_servicio" class="block text-slate-700 text-sm font-medium mb-2">Tipo de
+                                    Servicio</label>
+                                <select id="tipo_servicio" name="tipo_servicio"
+                                    class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-sky-500 focus:border-sky-500 bg-white">
+                                    <option>Residencial</option>
+                                    <option>Comercial</option>
+                                    <option>Emergencia</option>
+                                    <option>Estación de Carga</option>
+                                    <option>Piscina/Spa</option>
+                                    <option>Iluminación</option>
+                                    <option>Calefacción</option>
+                                    <option>Renovación</option>
+                                    <option>Panel Eléctrico</option>
+                                    <option>Conexiones</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="mb-6">
+                                <label for="descripcion" class="block text-slate-700 text-sm font-medium mb-2">Describa
+                                    su necesidad</label>
+                                <textarea id="descripcion" name="descripcion" rows="3"
+                                    class="w-full px-4 py-2 border border-slate-300 rounded-lg focus:ring-sky-500 focus:border-sky-500"></textarea>
+                            </div>
+                            <div class="mb-4">
+                                <label class="inline-flex items-center">
+                                    <input type="checkbox"
+                                        class="rounded border-slate-300 text-sky-600 shadow-sm focus:border-sky-300 focus:ring focus:ring-offset-0 focus:ring-sky-200 focus:ring-opacity-50"
+                                        name="consentimiento">
+                                    <span class="ml-2 text-sm text-slate-600">Acepto ser contactado.</span>
+                                </label>
+                            </div>
+                            <div>
+                                <button type="submit"
+                                    class="w-full bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-6 rounded-lg text-lg transition-colors duration-300 textsky300">Enviar
+                                    Solicitud</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-4">Nuestros Servicios Eléctricos</h2>
+            <p class="text-center text-slate-600 mb-12 max-w-2xl mx-auto">Desde instalaciones complejas hasta
+                reparaciones urgentes, nuestro equipo está listo para ayudarle con profesionalismo y eficiencia.</p>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-sky-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M7.5 21 3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2 text-center">Estaciones de Carga</h3>
+                    <p class="text-slate-600 text-sm text-center">Instalación profesional de estaciones de carga para
+                        todo tipo de vehículos eléctricos, preparando su hogar o negocio para el futuro de la movilidad.
+                    </p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-sky-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 001.5-1.5V6a1.5 1.5 0 00-1.5-1.5H3.75A1.5 1.5 0 002.25 6v12a1.5 1.5 0 001.5 1.5zm10.5-11.25h.008v.008h-.008V8.25zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2 text-center">Piscinas y Spas</h3>
+                    <p class="text-slate-600 text-sm text-center">Conexión segura y eficiente de spas, motores de
+                        piscina, bombas de calor y otros equipos acuáticos para su disfrute y tranquilidad.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-sky-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.354a15.055 15.055 0 01-4.5 0m3.75-12.354V6.128c0-.621.504-1.125 1.125-1.125h.007c.621 0 1.125.504 1.125 1.125v3.398m0 0L19.5 7.5M12 18l3.75-3.75M12 18L8.25 14.25" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2 text-center">Iluminación</h3>
+                    <p class="text-slate-600 text-sm text-center">Diseño, instalación, modificaciones y adiciones de
+                        sistemas de iluminación. Expertos en iluminación LED interior y exterior.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-sky-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.362-3.797A8.23 8.23 0 0112 21a8.23 8.23 0 01-3.362-3.797m1.587-5.352a5.232 5.232 0 00-1.277 5.085" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2 text-center">Calefacción</h3>
+                    <p class="text-slate-600 text-sm text-center">Instalación de sistemas de calefacción eléctrica:
+                        rodapiés, convectores, termostatos inteligentes y suelos radiantes.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-sky-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.528-1.032.06-2.29-.976-2.795l-2.496-1.248c-.528-.264-1.103.088-1.366.611l-2.496 4.992c-.264.528.088 1.103.612 1.366l4.992 2.496c1.032.528 2.29.06 2.795-.976l-3.03-2.496zm0 0l2.496 2.496" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2 text-center">Renovaciones</h3>
+                    <p class="text-slate-600 text-sm text-center">Modernice su sistema eléctrico. Agregamos o
+                        modificamos circuitos, enchufes, interruptores, iluminación, calefacción y más.</p>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-sky-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 3v11.25A2.25 2.25 0 006 16.5h12A2.25 2.25 0 0020.25 14.25V3m-16.5 0h16.5m-16.5 0H3.75m16.5 0H20.25M3.75 3H20.25M3.75 6.75H20.25m-16.5 3H20.25m-16.5 3H20.25M3.75 16.5H20.25m-16.5 0V21m16.5-4.5V21m-12-10.5h.008v.008H8.25V10.5zm3.75 0h.008v.008H12V10.5zm3.75 0h.008v.008H15.75V10.5z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2 text-center">Panel Eléctrico</h3>
+                    <p class="text-slate-600 text-sm text-center">Reemplazo de paneles, adiciones de circuitos, pruebas
+                        de seguridad y optimización para un suministro eléctrico seguro y eficiente.</p>
+                </div>
+                <div
+                    class="bg-slate-50 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 md:col-span-2 lg:col-span-1 lg:col-start-2">
+                    <div class="text-sky-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-12 h-12 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-slate-800 mb-2 text-center">Conexiones Especializadas</h3>
+                    <p class="text-slate-600 text-sm text-center">Realizamos conexiones eléctricas para todo tipo de
+                        equipos, incluyendo hornos eléctricos, bombas de calor, maquinaria y más.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#contacto"
+                    class="bg-sky-600 hover:bg-sky-700 text-white font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-300">¿No
+                    ve su necesidad? Contáctenos</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-16 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="lg:flex lg:items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6">Sobre Legatti Électrique: <span
+                            class="text-sky-600">Su Socio de Confianza</span></h2>
+                    <p class="text-slate-600 mb-4">Con <strong>más de 15 años de experiencia</strong> combinada en
+                        trabajos eléctricos, principalmente en el sector residencial, nuestro equipo en Legatti
+                        Électrique se dedica a ofrecer soluciones seguras y personalizadas.</p>
+                    <p class="text-slate-600 mb-6">Alexandre Léger y Jason Attie, socios desde hace mucho tiempo en la
+                        industria eléctrica, han unido sus fuerzas y experiencia para fundar Legatti Électrique. Tras
+                        superar juntos numerosos desafíos y especializarse en sistemas eléctricos residenciales,
+                        decidieron crear una empresa con una misión clara: <strong>brindar servicios eléctricos de la
+                            más alta calidad, comprometidos con la seguridad y la satisfacción total de cada
+                            propietario.</strong></p>
+                </div>
+                <div class="lg:w-1/2 mt-8 lg:mt-0 lg:pl-12">
+                    <img src="./img/About-Us.png" alt="Equipo de Legatti Électrique"
+                        class="rounded-lg shadow-xl w-full">
+                </div>
+            </div>
+
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-slate-800 mb-8 text-center">¿Por Qué Elegir Legatti Électrique?</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-sky-600 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10 mx-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-lg text-slate-700">Técnicos Certificados</h4>
+                        <p class="text-sm text-slate-500">Profesionalismo y conocimiento que garantizan un trabajo bien
+                            hecho.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-sky-600 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10 mx-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.248-8.25-3.286zm0 0A11.953 11.953 0 0112 2.25c1.417 0 2.772.28 3.999.786m-3.999-.786V6.75m0 0L12 9.75M12 6.75L8.25 9.75M12 2.25A11.953 11.953 0 008.001 3M8.001 3L12 6.75" />
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-lg text-slate-700">Seguridad Garantizada</h4>
+                        <p class="text-sm text-slate-500">Priorizamos la seguridad en cada intervención.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-sky-600 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10 mx-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-lg text-slate-700">Equipo Moderno</h4>
+                        <p class="text-sm text-slate-500">Herramientas de última generación para un servicio eficiente.
+                        </p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                        <div class="text-sky-600 mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-10 h-10 mx-auto">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-lg text-slate-700">Materiales de Calidad</h4>
+                        <p class="text-sm text-slate-500">Solo empleamos materiales duraderos y de marcas reconocidas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="area" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-4">Atendemos la Costa Norte de Montreal y
+                Alrededores</h2>
+            <p class="text-center text-slate-600 mb-10 max-w-2xl mx-auto">Legatti Électrique ofrece con orgullo sus
+                servicios eléctricos expertos en una amplia región. Si no está seguro si cubrimos su área, ¡no dude en
+                contactarnos!</p>
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-4">Ubicación</h2>
+            <p class="text-center text-slate-600 mb-10 max-w-2xl mx-auto">Saint-Augustin, Mirabel, QC, Canada</p>
+            <div class="md:flex md:items-start md:space-x-8">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h3 class="text-xl font-semibold text-sky-700 mb-4">Nuestros Territorios Principales:</h3>
+                    <ul class="list-disc list-inside text-slate-600 space-y-2 pl-4">
+                        <li>Costa Norte de Montreal</li>
+                        <li>Montreal</li>
+                        <li>Laval</li>
+                        <li>Laurentides</li>
+                        <li>Lanaudière y sus alrededores</li>
+                        <li>Específicamente en localidades como Saint-Augustin, Mirabel, QC, Canadá, y muchas más.</li>
+                    </ul>
+                    <a href="#contacto"
+                        class="mt-6 inline-block bg-sky-600 hover:bg-sky-700 text-white font-semibold py-2 px-6 rounded-lg text-md transition-colors duration-300">Contáctenos
+                        para confirmar</a>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-slate-200 rounded-lg shadow-md h-80 flex items-center justify-center">
+                        <!-- <img src="https://placehold.co/600x400/cbd5e1/475569?text=Mapa+del+%C3%81rea+de+Servicio"
+                            alt="Mapa del área de servicio" class="rounded-lg object-cover w-full h-full"> -->
+                        <!-- Para un mapa real, usar un iframe de Google Maps: -->
+                        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d358837.2334480907!2d-74.0594800944331!3d45.6034345383738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a541c64b70d%3A0x654e3138211fefef!2sMontreal%2C%20QC!5e0!3m2!1sen!2sca!4v1678886635035!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe> -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11161.162657591041!2d-73.99044272417227!3d45.624896893773865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc92bee39a2d793%3A0xa772f42833cde9df!2sSaint-Augustin%2C%20Mirabel%2C%20QC%20J7N%201X2!5e0!3m2!1sen!2sca!4v1748734649234!5m2!1sen!2sca"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 bg-sky-700 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-10">¡Hablemos de Su Proyecto Eléctrico!</h2>
+            <div class="md:flex md:justify-around md:items-start text-center md:text-left">
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-semibold text-sky-300 mb-3">Información de Contacto</h3>
+                    <p class="mb-1"><strong>Alexandre Léger:</strong> <a href="tel:5147127930"
+                            class="hover:text-sky-200">514-712-7930</a></p>
+                    <p class="mb-1"><strong>Jason Attie:</strong> <a href="tel:4388850597"
+                            class="hover:text-sky-200">438-885-0597</a></p>
+                    <p><strong>Correo Electrónico:</strong> <a href="mailto:legattielectrique@outlook.com"
+                            class="hover:text-sky-200">legattielectrique@outlook.com</a></p>
+                    <p class="mb-1"><strong>Saint-Augustin, Mirabel, QC, Canada</strong></p>
+                </div>
+                <div class="mb-8 md:mb-0">
+                    <h3 class="text-xl font-semibold text-sky-300 mb-3">Horario de Atención Regular</h3>
+                    <p>Lunes a Viernes: 6:00 AM - 5:00 PM (17:00 horas)</p>
+                    <p class="text-sm italic mt-1">*Podemos adaptarnos fácilmente a sus necesidades.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-sky-300 mb-3">Servicio de Emergencia 24/7</h3>
+                    <p>Para urgencias eléctricas fuera del horario regular, no dude en llamarnos. Estamos disponibles
+                        las 24 horas, los 7 días de la semana.</p>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#inicio"
+                    class="bg-white hover:bg-slate-100 text-sky-700 font-semibold py-3 px-8 rounded-lg text-lg transition-colors duration-300">Solicitar
+                    Servicio Ahora</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-800 text-slate-300 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-4">
+                <img src="./img/CMEQ_LOGO_signature_Hori_blanc_rgb.png" alt="Logo CMEQ"
+                    class="h-6 mx-auto mb-2 rounded">
+            </div>
+            <p class="text-sm mb-2">&copy; <span id="currentYear"></span> Legatti Entreprise Électrique. Todos los
+                derechos reservados.</p>
+            <p class="text-sm">
+                <a href="#" class="hover:text-sky-400">Política de Privacidad</a> |
+                <a href="#" class="hover:text-sky-400">Términos de Servicio</a>
+            </p>
+            <!-- 
+            <div class="mt-4">
+                <a href="#" class="text-slate-400 hover:text-sky-400 mx-2"><svg>...</svg></a>
+                <a href="#" class="text-slate-400 hover:text-sky-400 mx-2"><svg>...</svg></a>
+            </div>
+            -->
+        </div>
+    </footer>
+
+    <script>
+        // Script para el menú móvil
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenuItems = document.getElementById('mobile-menu-items');
+        const navbar = document.getElementById('navbar');
+
+        mobileMenuButton.addEventListener('click', () => {
+            navbar.classList.toggle('menu-open');
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace
+        const navLinks = mobileMenuItems.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (navbar.classList.contains('menu-open')) {
+                    navbar.classList.remove('menu-open');
+                }
+            });
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace del menú principal (para anclas)
+        const mainNavLinks = document.querySelectorAll('#navbar .md\\:flex a[href^="#"]');
+        mainNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                // Esto es más para el menú móvil, pero no daña en escritorio
+                if (navbar.classList.contains('menu-open')) {
+                    navbar.classList.remove('menu-open');
+                }
+            });
+        });
+
+        // Año actual en el footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+La imagenes deben ser reales, no caricaturas.
+Las imagenes no deben tener texto explicativo. O mucho texto.
+SEO: Metadatos.
+Debe estar en frances.
+Poner logo de la corporacion de maestros electricos de Québec.
+La licencia: Poner el numero de licencia.
+
+//**********************************************************
+https://www.a1electrique.com/
+Inspecciones y certificaciones.
+
+/******************************************************************************
+landing-page-legatti-electrique
+Legatti Entreprise Électrique
+/******************************************************************************
+Landing page.
+Empresa: Legatti Entreprise Électrique.
+Venta de servicios electricos.
+
+Residencial
+Comercial
+Emergencia 24/7. Sí ofrecemos servicios de emergencia 24 horas al día, 7 días a la semana para situaciones críticas.
+
+Servicio rapido, eficiente, impecable para todas sus necesidades eléctricas
+Soluciones a la medida
+Instalaciones eléctricas
+Nos adaptamos a sus necesidades.
+Nuestro enfoque se centra en comprender y responder a sus necesidades, brindando soluciones efectivas y prácticas.
+
+Nuestros servicios eléctricos
+Estaciones de carga. Instalación de estaciones de carga para todo tipo de vehículos eléctricos.
+Piscinas y spas. Conexión de spas, motores de piscina, bombas de calor y otros.
+Iluminación. Instalación, modificaciones y adiciones de cualquier tipo; Iluminación LED exterior e interior, etc.
+Calefacción. Instalación de rodapiés, convectores, suelos radiantes y otros.
+Renovaciones. Agregar/modificar circuitos, enchufes, iluminación, calefacción y más.
+Panel eléctrico. Reemplazo de paneles, adiciones, pruebas, optimización de circuitos y más.
+Conexiones. Conexión de todo tipo, incluidos hornos eléctricos y bombas de calor.
+
+Sobre nosotros
+Legatti Électrique
+Con más de 15 años de experiencia en trabajos eléctricos residenciales, nuestro equipo de técnicos certificados y acreditados se enfoca en brindar soluciones seguras y personalizadas para los propietarios de viviendas.
+Alexandre Léger y Jason Attie son socios desde hace mucho tiempo en el sector eléctrico. Con varios años de experiencia especializándose en sistemas eléctricos residenciales y tras haber superado juntos numerosos desafíos, decidieron fundar su propia empresa, Legatti Électrique. Nuestra misión es brindar servicios eléctricos residenciales de la más alta calidad. Nos comprometemos a garantizar la seguridad y la satisfacción de los propietarios en cada proyecto.
+
+- Técnicos certificados
+- Seguridad garantizada
+- Equipo moderno
+- Materiales de calidad
+
+Ubicación
+- Costa norte de montreal
+- Ofresemos nuestros servicios en los siguientes territorios:
+- Montreal
+- Laval
+- Laurentides
+- Lanaudière y alrededor
+- Saint-Augustin, Mirabel, QC, Canadá
+
+Contacto:
+- Alexandre Léger: 514-712-7930
+- Jason Attie: 438-885-0597
+- legattielectrique@outlook.com
+
+Horario de atencion:
+Lunes a Viernes, de 6 a 17 horas.
+Sin embargo, podemos adaptarnos fácilmente a sus necesidades.
+
+
+/************************************************************************************************
+En la primera seccion debe ir:
+Residencial
+Comercial
+Emergencia 24/7. Sí ofrecemos servicios de emergencia 24 horas al día, 7 días a la semana para situaciones críticas.
+
+El formulario de contacto debe estar dentro de la primera seccion y a la derecha
+Imagen de fondo usando el 100% en la primera seccion
+
+El logo Corporation des maitres électriciens du Québec. Debe estar arriba dentro de la barra de menu.
